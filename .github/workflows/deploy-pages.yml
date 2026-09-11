@@ -1,0 +1,44 @@
+name: Deploy JOTAIN Applications preview
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify preview boundary
+        run: |
+          test -f site/index.html
+          test -f site/404.html
+          if find site -name '*.map' -o -name '*.xlsx' -o -name '*.md' | grep -q .; then
+            echo 'Unexpected source or internal document in public delivery'
+            exit 1
+          fi
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';
+          for (const page of fs.readdirSync('site', {recursive:true}).filter(x => x.endsWith('.html'))) {
+            if (!fs.readFileSync(`site/${page}`, 'utf8').includes('noindex')) throw new Error(`Missing noindex: ${page}`);
+          }
+          JS
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

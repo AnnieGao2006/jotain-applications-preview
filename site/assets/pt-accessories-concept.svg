@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520"><defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fafcff"/><stop offset="1" stop-color="#e9eff5"/></linearGradient>
+    <linearGradient id="steel" x2="0.2" y2="1"><stop stop-color="#758898"/><stop offset=".33" stop-color="#f4f7fa"/><stop offset=".65" stop-color="#b3c2ce"/><stop offset="1" stop-color="#637788"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#cedae4" stroke-width=".6"/></pattern>
+    <pattern id="threads" width="11" height="22" patternUnits="userSpaceOnUse"><path d="M0 22L11 0" stroke="#607789" stroke-width="2"/></pattern>
+    </defs><rect width="800" height="520" fill="url(#bg)"/><rect x="35" y="35" width="730" height="450" fill="url(#grid)" opacity=".55"/>
+    <g fill="none" stroke="#b4c7d4" stroke-width="1"><path d="M35 65V35H65M735 35H765V65M765 455V485H735M65 485H35V455"/></g>
+    <g font-family="Arial,sans-serif" fill="#536f85"><text x="57" y="66" font-size="12" letter-spacing="3">JOTAIN / COMPONENT STUDY</text></g><g transform="translate(114 147)">
+    <path d="M0 43L147 0L229 55L80 104Z" fill="#dde7ef" stroke="#7f96a9" stroke-width="2"/><path d="M0 43V61L80 121V104M80 121L229 71V55" fill="#98adbf" stroke="#7f96a9" stroke-width="2"/><ellipse cx="116" cy="52" rx="24" ry="13" fill="#688396" stroke="#43ae9c" stroke-width="3"/>
+    <g transform="translate(327 5)"><path d="M0 30L44 0H109L147 30L105 63H42Z" fill="url(#steel)" stroke="#7f96a9" stroke-width="2"/><path d="M0 30V80L42 112H105L147 80V30L105 63H42Z" fill="url(#steel)" stroke="#7f96a9" stroke-width="2"/><ellipse cx="74" cy="31" rx="26" ry="14" fill="#4c687c"/><ellipse cx="74" cy="31" rx="20" ry="9" fill="#b4cbd6"/></g>
+    <g transform="translate(107 161)"><path d="M0 32L170 0L190 12V53L20 88L0 73Z" fill="url(#steel)" stroke="#7f96a9" stroke-width="2"/><ellipse cx="13" cy="54" rx="11" ry="22" fill="#526d82"/><ellipse cx="13" cy="54" rx="6" ry="15" fill="#afc5d1"/><path d="M20 38L188 5M20 69L188 37" stroke="#91a6b7"/></g></g>
+    <g font-family="Arial,sans-serif" font-size="12" fill="#191f3e"><text x="105" y="127">01 / BEARING PLATE</text><text x="442" y="127">02 / PT BAR NUT</text><text x="430" y="366">03 / COUPLER</text></g><path d="M411 362H398" stroke="#43ae9c"/><text x="57" y="464" fill="#71869a" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">CONCEPT ONLY · NOT TO SCALE</text></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520"><defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fafcff"/><stop offset="1" stop-color="#e9eff5"/></linearGradient>
+    <linearGradient id="steel" x2="0.2" y2="1"><stop stop-color="#758898"/><stop offset=".33" stop-color="#f4f7fa"/><stop offset=".65" stop-color="#b3c2ce"/><stop offset="1" stop-color="#637788"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#cedae4" stroke-width=".6"/></pattern>
+    <pattern id="threads" width="11" height="22" patternUnits="userSpaceOnUse"><path d="M0 22L11 0" stroke="#607789" stroke-width="2"/></pattern>
+    </defs><rect width="800" height="520" fill="url(#bg)"/><rect x="35" y="35" width="730" height="450" fill="url(#grid)" opacity=".55"/>
+    <g fill="none" stroke="#b4c7d4" stroke-width="1"><path d="M35 65V35H65M735 35H765V65M765 455V485H735M65 485H35V455"/></g>
+    <g font-family="Arial,sans-serif" fill="#536f85"><text x="57" y="66" font-size="12" letter-spacing="3">JOTAIN / COMPONENT STUDY</text></g><path d="M171 405V279A225 225 0 0 1 450 0V126A153 153 0 0 0 378 153" fill="none" opacity="0"/>
+    <path d="M166 410V284A234 234 0 0 1 634 284V410H576V284A176 176 0 0 0 224 284V410Z" fill="#dce5ed" stroke="#9ab0c0" stroke-width="2"/>
+    <path d="M218 410V284A182 182 0 0 1 582 284V410" fill="none" stroke="#43ae9c" stroke-width="6"/>
+    <g stroke="#738ea3" stroke-width="8"><path d="M224 319H109M240 227L130 175M291 156L232 89M400 102V76M509 156L568 89M560 227L670 175M576 319H691"/></g>
+    <g stroke="#43ae9c" stroke-width="5"><path d="M233 307V331M239 215L249 239M281 162L302 148M388 110H412M498 148L519 162M550 240L562 217M568 307V331"/></g>
+    <path d="M264 402H536" stroke="#9ab0c0" stroke-width="2"/><path d="M329 292H471" stroke="#a9bccb" stroke-dasharray="7 6"/>
+    <g font-family="Arial,sans-serif" fill="#191f3e"><text x="348" y="273" font-size="12">TUNNEL SECTION</text><text x="85" y="368" font-size="11">ROCK BOLTS</text><text x="476" y="435" font-size="11">SUPPORT FRAME</text></g><text x="57" y="464" fill="#71869a" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">CONCEPT ONLY · NOT TO SCALE</text></svg>
